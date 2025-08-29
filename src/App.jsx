@@ -13,7 +13,11 @@ function App() {
       element: <AppLayout/>,
       children: [
         {
-          path: "/home",
+          index:true,
+          element: <Home />,
+        },
+        {
+          path:'home',
           element: <Home />,
         },
         {
