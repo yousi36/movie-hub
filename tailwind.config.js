@@ -6,7 +6,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", // all React components inside /src
   ],
   theme: {
-    extend: {}, // customize theme here (colors, fonts, spacing, etc.)
-  },
-  plugins: [], // add Tailwind plugins (forms, typography, etc.)
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], 
+        roboto: ['Roboto', 'sans-serif'],         
+    },
+  }, // customize theme here (colors, fonts, spacing, etc.)
+},
+plugins: [], // add Tailwind plugins (forms, typography, etc.)
 };

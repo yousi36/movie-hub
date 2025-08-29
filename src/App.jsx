@@ -5,31 +5,34 @@ import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
 import "./App.css";
 import { AppLayout } from "./Layout/AppLayout";
+import ErrorPage from "./Layout/ErrorPage";
 
 function App() {
   const route = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout/>,
+      errorElement:<ErrorPage />,
       children: [
         {
           index:true,
           element: <Home />,
         },
-        {
-          path:'home',
+
+         {
+          path:"home",
           element: <Home />,
         },
         {
-          path: "/about",
+          path: "about",
           element: <About />,
         },
         {
-          path: "/movie",
+          path: "movie",
           element: <Movie />,
         },
         {
-          path: "/contact",
+          path: "contact",
           element: <Contact />,
         },
       ]
