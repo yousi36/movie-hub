@@ -21,8 +21,8 @@ function App() {
           index: true,
           element: <Home />,
         },
-        {
-          path: "home",
+         {
+          path:"home",
           element: <Home />,
         },
         {
